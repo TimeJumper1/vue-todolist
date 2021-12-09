@@ -1,0 +1,42 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common */
+ul{
+    list-style-type: none;
+}
+/* header */
+.title{
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* main */
+.inserimento-dati{
+    text-align: center;
+    margin: 20px;
+}
+.text-insert{
+    padding: 10px;
+    border-radius: 10px;
+    border-color:aquamarine ;
+}
+.add-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border-color:aquamarine ;
+}
+.liste{
+    margin: auto;
+    max-width: 67%;
+    background-color: aquamarine;
+    padding: 20px;
+}
+li{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
