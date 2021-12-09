@@ -18,12 +18,12 @@
         </header>
         <main>
             <div class="inserimento-dati">
-                <input v-model="newTodo" class="text-insert" type="text" placeholder="inserisci la tua lista">
-                <button @click="addNewTodo(newTodo)" class="add-btn">aggiungi</button>
+                <input v-model="newTodo" @keyup.enter="addNewTodo(newTodo)" class="text-insert" type="text" placeholder="inserisci la tua lista">
+                <button @click="addNewTodo(newTodo)"  class="add-btn">aggiungi</button>
             </div>
             <div class="liste">
                 <ul>
-                    <li v-for="(element ,index) in todo" :class="{'completed': element.done } ">
+                    <li v-for="(element ,index) in todo" @click="doneOrNot(index)" :class="{'completed': element.done } " >
                         {{element.text}}
                         <div class="icon" @click="completed(index)">
                             <i  class="far fa-window-close"></i>

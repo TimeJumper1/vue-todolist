@@ -38,8 +38,10 @@ const app = new Vue(
                 this.newTodo= ''
                 
 
+            },
+            doneOrNot: function(index){
+                this.todo[index].done =!this.todo[index].done   
             }
-            
         },
     }
 );
