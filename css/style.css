@@ -35,8 +35,15 @@ ul{
     max-width: 67%;
     background-color: aquamarine;
     padding: 20px;
+    border-radius: 10px;
 }
 li{
     padding: 10px;
     border-bottom: 1px solid black;
+}
+.icon{
+    float: right;
+}
+.completed{
+    text-decoration: line-through;
 }
