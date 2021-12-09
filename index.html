@@ -19,7 +19,7 @@
         <main>
             <div class="inserimento-dati">
                 <input v-model="newTodo" class="text-insert" type="text" placeholder="inserisci la tua lista">
-                <button class="add-btn">aggiungi</button>
+                <button @click="addNewTodo(newTodo)" class="add-btn">aggiungi</button>
             </div>
             <div class="liste">
                 <ul>
