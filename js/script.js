@@ -26,7 +26,11 @@ const app = new Vue(
         },
         
         methods: {
-
-        }
+            completed: function(index){
+                this.todo.splice(this.todo[index], 1)
+                
+            }
+            
+        },
     }
 );
